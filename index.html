@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Converter</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/image.png" type="image/png" />
-  </head>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>| Temperatures Converter - celsius degree to fahrenheit degree - fahrenheit degree to celsius degree |</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
   <div class="wrapper">
-    <h1 class="big-title">Temperature Converter</h1>
-    <div class="container">
-      <div class="celsius-input">
-        <label for="degree-celsius-number">
-          Enter your temperature in Celsius °C
-        </label>
-        <input type="text" id="degree-celsius-number" />
+    <h1>Convertor Temperatures</h1>
+    <div class="converter-container">
+      <div class="converter">
+        <input type="text" id="inputTemp" placeholder="Insert Temperature">
+        <button id="swapBtn" title="Schimbă direcția">🔄</button>
+        <input type="text" id="outputTemp" placeholder="Result:" readonly>
       </div>
-      <p id="output">Result will appear here</p>
-      <button onclick="calculeazaFormula()">Calculate</button>
+      <div class="formula">
+        <p id="formulaText">Formula:</p>
+      </div>
     </div>
+    <p id="modeLabel">Mode: Celsius → Fahrenheit</p>
+    <p id="result">Result:</p>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
