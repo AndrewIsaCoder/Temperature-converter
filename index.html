@@ -3,37 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>| Temperature Converter |</title>
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="shortcut icon" href="assets/image.png" type="image/png" />
-    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <script src="app.js"></script>
+<body>
+  <div class="wrapper">
     <h1 class="big-title">Temperature Converter</h1>
     <div class="container">
-      <div class="first-number-in-degree-celsius">
-        <input type="number" id="degree-celsius-number" />
-        <label for="degree-celsius-number"
-          >Enter your temperature in Degree Celsius °C (without any
-          symbols)</label
-        >
+      <div class="celsius-input">
+        <label for="degree-celsius-number">
+          Enter your temperature in Celsius °C
+        </label>
+        <input type="text" id="degree-celsius-number" />
       </div>
-      <div class="first-number-in-degree-celsius">
-        <input type="number" id="degree-celsius-number" />
-        <label for="degree-celsius-number"
-          >Enter your temperature in Fahrenheit °F (without any
-          symbols)</label
-        >
-      </div>
-      <button>Calculate</button>
+      <p id="output">Result will appear here</p>
+      <button onclick="calculeazaFormula()">Calculate</button>
     </div>
-  </body>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
