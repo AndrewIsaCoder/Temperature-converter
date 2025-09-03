@@ -18,7 +18,7 @@ function fahrenheitToCelsius(f) {
 function convert() {
   const value = parseFloat(inputTemp.value);
   if(isNaN(value)) {
-    result.textContent = "Introduceți un număr valid!";
+    result.textContent = "Insert a valid number!";
     outputTemp.value = "";
     formulaText.textContent = "";
     return;
@@ -41,7 +41,7 @@ inputTemp.addEventListener("input", convert);
 
 swapBtn.addEventListener("click", () => {
   cToF = !cToF;
-  modeLabel.textContent = cToF ? "Mod: Celsius → Fahrenheit" : "Mod: Fahrenheit → Celsius";
+  modeLabel.textContent = cToF ? "Mode: Celsius → Fahrenheit" : "Mode: Fahrenheit → Celsius";
   inputTemp.value = "";
   outputTemp.value = "";
   result.textContent = "Result";
